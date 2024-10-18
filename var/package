@@ -1,0 +1,60 @@
+repo="C-plus-plus.Dev.offline"
+name="c-plus-plus.dev"
+bin=foo #clang
+
+type=apt
+
+os="Ubuntu"
+os_version="24.10"
+
+clangd_version=19
+
+package=(
+    "g++_"
+    "gcc_"
+    "clang_"
+    "cmake"
+    # "gdb"     # already installed?
+   "clangd-${clangd_version}"
+   "clang-tools_"
+    "build-essential"
+)
+
+depends=(
+    "libdpkg-perl"
+    "bzip2"
+    "lto-disabled-list"
+    "dpkg-dev"
+    "make"
+    "libstdc++-14-dev"
+    "libcc1-0"
+    "libitm1"
+    "libasan8"
+    "liblsan0"
+    "libtsan2"
+    "libubsan1"
+    "libhwasan0"
+    "libquadmath0"
+    "libgcc-14-dev"
+    "gcc-x86-64-linux-gnu"
+    "g++-x86-64-linux-gnu"
+    "gcc-14-x86-64-linux-gnu"
+    "g++-14-x86-64-linux-gnu"
+    "gcc-14_"
+    "g++-14_"
+    "libclang-cpp19"
+    "libgc1"
+    "libobjc4"
+    "libobjc-14-dev"
+    "libclang-common-19-dev"
+    "llvm-19-linker-tools"
+    "libclang1-19"
+    "libprotoc32t64"
+    "libre2-11"
+    "libgrpc29t64"
+    "libgrpc++1.51t64"
+    "clang-19"
+    "clang-tools-19"
+    "libjsoncpp25"
+    "librhash0"
+)
